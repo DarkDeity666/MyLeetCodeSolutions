@@ -6,7 +6,7 @@ public:
             int digit = x % 10;
             x /= 10;
 
-            // Check for overflow before updating 'reversed'
+            // Check for overflow before updating "reversed"
             if (reversed > INT_MAX / 10 || (reversed == INT_MAX / 10 && digit > 7)) {
                 return 0;
             }
